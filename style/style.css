@@ -14,7 +14,7 @@
 }
 #home-browsing .description {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 100px;
   padding: 100px;
@@ -25,6 +25,7 @@
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.01em;
+  margin-bottom: 10px;
 }
 #home-browsing .description .role-text {
   font-size: 21px;
@@ -59,7 +60,7 @@
   color: #FFFFFF;
 }
 #home-browsing .user-insights {
-  padding: 100px 90px 50px;
+  padding: 100px 100px 50px;
   background-color: #F9F9F9;
 }
 #home-browsing .user-insights .section-name {
@@ -197,7 +198,7 @@
 }
 #home-browsing .design-exp .section-title {
   margin-bottom: 100px;
-  color: #000000;
+  color: #3F3F3F;
 }
 #home-browsing .design-exp .browsing-exp-wrapper {
   position: relative;
@@ -494,6 +495,7 @@
   line-height: 48px;
   text-align: center;
   letter-spacing: 0.02em;
+  color: #3F3F3F;
 }
 #home-browsing .inner-title {
   text-align: center;

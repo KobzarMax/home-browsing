@@ -14,7 +14,7 @@
     }
     .description {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         gap: 100px;
         padding: 100px;
@@ -24,6 +24,7 @@
             font-size: 14px;
             line-height: 24px;
             letter-spacing: 0.01em;
+            margin-bottom: 10px;
         }
         .role-text {
             font-size: 21px;
@@ -59,7 +60,7 @@
         }
     }
     .user-insights {
-        padding: 100px 90px 50px;
+        padding: 100px 100px 50px;
         background-color: #F9F9F9;
         .section-name {
             color: #3F3F3F;
@@ -196,7 +197,7 @@
         }
         .section-title {
             margin-bottom: 100px;
-            color: #000000;
+            color: #3F3F3F;
         }
         .browsing-exp-wrapper {
             position: relative;
@@ -498,6 +499,7 @@
         line-height: 48px;
         text-align: center;
         letter-spacing: 0.02em;
+        color: #3F3F3F;
     }
     .inner-title {
         text-align: center;
