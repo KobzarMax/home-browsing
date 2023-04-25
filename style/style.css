@@ -269,7 +269,11 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 50px;
+}
+#home-browsing .cross-platform {
+  padding: 0 100px 50px;
 }
 #home-browsing .cross-platform .section-subtitle {
   text-align: center;
@@ -294,7 +298,6 @@
   justify-content: center;
   flex-direction: column;
   gap: 20px;
-  padding: 0 100px 50px;
 }
 #home-browsing .cross-platform .cross-platform-cards .card {
   border: 1px solid #E1E1E1;
@@ -538,7 +541,7 @@
     width: 1200px;
     left: 200px;
   }
-  #home-browsing .cross-platform .cross-platform-cards {
+  #home-browsing .cross-platform {
     padding: 0 180px 50px;
   }
   #home-browsing .final-flow {
@@ -602,7 +605,7 @@
     max-width: 100%;
   }
   #home-browsing .design-exp {
-    padding: 70px;
+    padding: 40px;
   }
   #home-browsing .design-exp .browsing-exp-wrapper::after {
     width: 860px;
@@ -619,10 +622,13 @@
     flex-direction: column-reverse;
     gap: 40px;
     padding: 40px;
+    margin-left: 0;
+  }
+  #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .section-title {
+    margin-bottom: 40px;
   }
   #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones {
     gap: 100px;
-    justify-content: flex-start;
     margin: 0;
   }
   #home-browsing .design-exp .mobile-browsing-exp .mobile-browsing-exp-cards {
@@ -634,7 +640,7 @@
   #home-browsing .design-exp .mobile-browsing-exp .mobile-browsing-exp-cards .card img {
     width: 100%;
   }
-  #home-browsing .cross-platform .cross-platform-cards {
+  #home-browsing .cross-platform {
     padding: 0 40px;
   }
   #home-browsing .cross-platform .cross-platform-cards .card {
@@ -711,5 +717,116 @@
   }
   #home-browsing .description .project-wrapper {
     width: 100%;
+  }
+  #home-browsing .cross-platform {
+    max-width: 100%;
+  }
+  #home-browsing .cross-platform .cross-platform-cards .card {
+    max-width: 100%;
+  }
+  #home-browsing .cross-platform .cross-platform-cards .card .card-image {
+    max-width: 100%;
+  }
+  #home-browsing .cross-platform .cross-platform-cards .card .card-image img {
+    width: 100%;
+  }
+}
+@media (max-width: 1199px) {
+  #home-browsing .design-exp .browsing-exp-wrapper .title {
+    display: block;
+    text-align: center;
+  }
+  #home-browsing .design-exp .browsing-exp-wrapper::after {
+    width: 520px;
+    left: auto;
+    right: auto;
+    bottom: -50px;
+  }
+  #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp {
+    margin-bottom: 0;
+  }
+  #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones {
+    gap: 50px;
+  }
+  #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones .phone:not(:last-child)::after {
+    width: 37px;
+    display: inline-block;
+    right: -40px;
+  }
+  #home-browsing .design-exp .mobile-browsing-exp {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 992px) {
+  #home-browsing .catalog-types {
+    flex-direction: column;
+  }
+  #home-browsing .cross-platform {
+    padding: 40px;
+  }
+  #home-browsing .design-exp {
+    max-width: 100%;
+  }
+  #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones .phone {
+    max-width: 88px;
+  }
+  #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones .phone img {
+    width: 100%;
+  }
+  #home-browsing .dev-direction {
+    max-width: 100%;
+  }
+  #home-browsing .user-insights .user-insights-cards {
+    align-items: flex-start;
+  }
+  #home-browsing .user-insights .user-insights-cards .card {
+    max-width: 250px;
+  }
+  #home-browsing .laptop .laptop-wrapper img {
+    width: 100%;
+  }
+  #home-browsing .final-flow .final-flow-images {
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: space-between;
+  }
+  #home-browsing .final-flow .final-flow-images .image {
+    margin-right: 0;
+  }
+  #home-browsing .final-flow .final-flow-images .card:nth-child(2) img {
+    margin-bottom: 0;
+  }
+  #home-browsing .final-flow .final-flow-images .card:nth-child(3) img {
+    margin-top: 0;
+  }
+  #home-browsing .stakeholder-insights .stakeholder-insights-cards .card .image-wrapper img {
+    width: 100%;
+  }
+}
+@media (max-width: 572px) {
+  #home-browsing .conclusions .conclusions-cards {
+    flex-direction: column;
+  }
+  #home-browsing .conclusions .conclusions-cards .card {
+    width: 100%;
+  }
+  #home-browsing .design-exp .browsing-exp-wrapper::after {
+    display: none;
+  }
+  #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp {
+    padding: 40px 0;
+  }
+  #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones .phone:nth-child(2)::after {
+    display: none;
+  }
+  #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones .phone.phone:not(:last-child)::after {
+    right: -80px;
+  }
+  #home-browsing .final-flow .final-flow-images .card {
+    max-width: 88px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -268,11 +268,13 @@
                 align-items: center;
                 justify-content: center;
                 flex-wrap: wrap;
+                flex-direction: column;
                 gap: 50px;
             }
         }
     }
     .cross-platform {
+        padding: 0 100px 50px;
         .section-subtitle {
             text-align: center;
             font-weight: 400;
@@ -296,7 +298,6 @@
             justify-content: center;
             flex-direction: column;
             gap: 20px;
-            padding: 0 100px 50px;
             .card {
                 border: 1px solid #E1E1E1;
                 padding: 30px 40px;
@@ -547,9 +548,7 @@
             }
         }
         .cross-platform {
-            .cross-platform-cards {
-                padding: 0 180px 50px;
-            }
+            padding: 0 180px 50px;
         }
         .final-flow {
             padding: 100px 180px;
@@ -615,7 +614,7 @@
             }
         }
         .design-exp {
-            padding: 70px;
+            padding: 40px;
             .browsing-exp-wrapper {
                 &::after {
                     width: 860px;
@@ -632,9 +631,12 @@
                     flex-direction: column-reverse;
                     gap: 40px;
                     padding: 40px;
+                    margin-left: 0;
+                    .section-title {
+                        margin-bottom: 40px;
+                    }
                     .browsing-exp-phones {
                         gap: 100px;
-                        justify-content: flex-start;
                         margin: 0;
                     }
                 }
@@ -652,8 +654,8 @@
             }
         }
         .cross-platform {
+            padding: 0 40px;
             .cross-platform-cards {
-                padding: 0 40px;
                 .card {
                     flex-direction: column;
                     gap: 20px;
@@ -734,6 +736,170 @@
             gap: 40px;
             .project-wrapper {
                 width: 100%;
+            }
+        }
+        .cross-platform {
+            max-width: 100%;
+            .cross-platform-cards {
+                .card {
+                    max-width: 100%;
+                    .card-image {
+                        max-width: 100%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    #home-browsing {
+        .design-exp {
+            .browsing-exp-wrapper {
+                .title {
+                    display: block;
+                    text-align: center;
+                }
+                &::after {
+                    width: 520px;
+                    left: auto;
+                    right: auto;
+                    bottom: -50px;
+                }
+                .browsing-exp {
+                    margin-bottom: 0;
+                    .browsing-exp-phones {
+                        gap: 50px;
+                        .phone {
+                            &:not(:last-child)::after {
+                                width: 37px;
+                                display: inline-block;
+                                right: -40px;
+                            }
+                        }
+                    }
+                }
+            }
+            .mobile-browsing-exp {
+                margin-top: 100px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    #home-browsing {
+        .catalog-types {
+            flex-direction: column;
+        }
+        .cross-platform {
+            padding: 40px;
+        }
+        .design-exp {
+            max-width: 100%;
+            .browsing-exp-wrapper {
+                .browsing-exp {
+                    .browsing-exp-phones {
+                        .phone {
+                            max-width: 88px;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .dev-direction {
+            max-width: 100%;
+        }
+        .user-insights {
+            .user-insights-cards {
+                align-items: flex-start;
+                .card {
+                    max-width: 250px;
+                }
+            }
+        }
+        .laptop {
+            .laptop-wrapper {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .final-flow {
+            .final-flow-images {
+                flex-wrap: wrap;
+                margin: 0;
+                justify-content: space-between;
+                .image {
+                    margin-right: 0;
+
+                }
+                .card {
+                    &:nth-child(2) img {
+                        margin-bottom: 0;
+                    }
+                    &:nth-child(3) img {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+        .stakeholder-insights {
+            .stakeholder-insights-cards {
+                .card {
+                    .image-wrapper {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 572px) {
+    #home-browsing {
+        .conclusions {
+            .conclusions-cards {
+                flex-direction: column;
+                .card {
+                    width: 100%;
+                }
+            }
+        }
+        .design-exp {
+            .browsing-exp-wrapper {
+                &::after {
+                    display: none;
+                }
+                .browsing-exp {
+                    padding: 40px 0;
+                    .browsing-exp-phones {
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        .phone {
+                            &:nth-child(2)::after {
+                                display: none;
+                            }
+                            &.phone:not(:last-child)::after {
+                                right: -80px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .final-flow {
+            .final-flow-images {
+                .card {
+                    max-width: 88px;
+                }
             }
         }
     }
