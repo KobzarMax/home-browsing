@@ -10,7 +10,7 @@
   height: 539px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 #home-browsing .description {
   display: flex;
@@ -59,7 +59,7 @@
   color: #FFFFFF;
 }
 #home-browsing .user-insights {
-  padding: 100px 100px 50px;
+  padding: 100px 90px 50px;
   background-color: #F9F9F9;
 }
 #home-browsing .user-insights .section-name {
@@ -106,9 +106,10 @@
   letter-spacing: 0.01em;
   font-size: 16px;
   line-height: 24px;
+  padding-right: 20px;
 }
 #home-browsing .stakeholder-insights {
-  padding: 50px 100px 100px;
+  padding: 50px 90px 100px;
 }
 #home-browsing .stakeholder-insights .inner-title {
   font-size: 28px;
@@ -145,6 +146,11 @@
 }
 #home-browsing .stakeholder-insights .stakeholder-insights-cards .card .text span {
   font-weight: 700;
+}
+#home-browsing .stakeholder-insights .stakeholder-insights-cards .card .image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #home-browsing .conclusions {
   background-color: #3F3F3F;
@@ -204,7 +210,7 @@
   height: 1px;
   width: 1040px;
   bottom: -100px;
-  left: 100px;
+  left: 170px;
 }
 #home-browsing .design-exp .browsing-exp-wrapper .title {
   color: #3F3F3F;
@@ -310,6 +316,9 @@
   line-height: 24px;
   letter-spacing: 0.01em;
 }
+#home-browsing .cross-platform .cross-platform-cards .card:nth-child(2) {
+  background-color: #F9F9F9;
+}
 #home-browsing .final-flow {
   background-color: #3F3F3F;
   padding: 100px;
@@ -331,35 +340,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 144.34px;
+  margin-top: 27.35px;
 }
-#home-browsing .final-flow .final-flow-images .card.image {
+#home-browsing .final-flow .final-flow-images .image {
+  margin-right: 150px;
   position: relative;
 }
-#home-browsing .final-flow .final-flow-images .card.image::after {
+#home-browsing .final-flow .final-flow-images .image::after {
   position: absolute;
   content: url("../asset/arrow-white.svg");
-  right: -80px;
+  right: -110px;
   top: 40%;
 }
-#home-browsing .final-flow .final-flow-images .inner-cards-wrapper {
-  display: flex;
-  align-items: center;
-}
-#home-browsing .final-flow .final-flow-images .inner-cards-wrapper:first-child {
+#home-browsing .final-flow .final-flow-images .card:nth-child(2) img {
   margin-bottom: 187px;
 }
-#home-browsing .final-flow .final-flow-images .inner-cards-wrapper:last-child {
-  margin-yop: 187px;
-}
-#home-browsing .final-flow .final-flow-images .inner-cards-wrapper image {
-  position: relative;
-}
-#home-browsing .final-flow .final-flow-images .inner-cards-wrapper image::after {
-  position: absolute;
-  content: url("../asset/arrow-white.svg");
-  right: -80px;
-  top: 40%;
+#home-browsing .final-flow .final-flow-images .card:nth-child(3) img {
+  margin-top: 187px;
 }
 #home-browsing .feat-func {
   padding: 100px;
@@ -427,6 +424,7 @@
 #home-browsing .final-outcomes {
   padding: 100px;
   background-color: #3F3F3F;
+  width: 100%;
 }
 #home-browsing .final-outcomes .section-name {
   margin-bottom: 50px;
@@ -499,4 +497,217 @@
 }
 #home-browsing .inner-title {
   text-align: center;
+}
+#home-browsing .section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1919px) {
+  #home-browsing .section-title {
+    max-width: 1440px;
+    margin: 0 auto 100px;
+  }
+  #home-browsing .header-image {
+    background-image: url("../asset/header-xl.png");
+  }
+  #home-browsing .background {
+    padding: 100px 180px;
+    width: 100%;
+  }
+  #home-browsing .user-insights {
+    padding: 100px 180px 50px;
+  }
+  #home-browsing .stakeholder-insights {
+    padding: 50px 180px 100px;
+  }
+  #home-browsing .conclusions {
+    padding: 100px 180px;
+    width: 100%;
+  }
+  #home-browsing .conclusions .conclusions-cards {
+    gap: 100px;
+  }
+  #home-browsing .design-exp {
+    padding: 100px 180px;
+  }
+  #home-browsing .design-exp .browsing-exp-wrapper::after {
+    width: 1200px;
+    left: 200px;
+  }
+  #home-browsing .cross-platform .cross-platform-cards {
+    padding: 0 180px 50px;
+  }
+  #home-browsing .final-flow {
+    padding: 100px 180px;
+    width: 100%;
+  }
+  #home-browsing .feat-func {
+    padding: 100px 180px;
+  }
+  #home-browsing .final-outcomes {
+    width: 100%;
+    padding: 100px 180px;
+  }
+  #home-browsing .laptop {
+    padding: 50px 0;
+    width: 100%;
+  }
+  #home-browsing .laptop .laptop-wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  #home-browsing .header-image {
+    background-image: url("../asset/header-md.png");
+  }
+  #home-browsing .background {
+    padding: 40px;
+    width: 100%;
+  }
+  #home-browsing .background .section-title {
+    margin-bottom: 40px;
+  }
+  #home-browsing .dev-direction {
+    max-width: 1200px;
+  }
+  #home-browsing .user-insights {
+    padding: 40px;
+    width: 100%;
+  }
+  #home-browsing .stakeholder-insights {
+    padding: 40px;
+  }
+  #home-browsing .stakeholder-insights .stakeholder-insights-cards {
+    flex-direction: column;
+  }
+  #home-browsing .stakeholder-insights .stakeholder-insights-cards .card {
+    width: 100%;
+  }
+  #home-browsing .conclusions {
+    padding: 40px;
+    width: 100%;
+  }
+  #home-browsing .conclusions .conclusions-cards {
+    gap: 40px;
+    align-items: flex-start;
+  }
+  #home-browsing .conclusions .conclusions-cards .card {
+    max-width: 510px;
+  }
+  #home-browsing .conclusions .conclusions-cards .card img {
+    max-width: 100%;
+  }
+  #home-browsing .design-exp {
+    padding: 70px;
+  }
+  #home-browsing .design-exp .browsing-exp-wrapper::after {
+    width: 860px;
+    left: 170px;
+  }
+  #home-browsing .design-exp .browsing-exp-wrapper .title {
+    display: none;
+  }
+  #home-browsing .design-exp .browsing-exp-wrapper .section-title {
+    margin-bottom: 70px;
+  }
+  #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp {
+    margin-bottom: 70px;
+    flex-direction: column-reverse;
+    gap: 40px;
+    padding: 40px;
+  }
+  #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones {
+    gap: 100px;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  #home-browsing .design-exp .mobile-browsing-exp .mobile-browsing-exp-cards {
+    width: 100%;
+  }
+  #home-browsing .design-exp .mobile-browsing-exp .mobile-browsing-exp-cards .card {
+    width: 100%;
+  }
+  #home-browsing .design-exp .mobile-browsing-exp .mobile-browsing-exp-cards .card img {
+    width: 100%;
+  }
+  #home-browsing .cross-platform .cross-platform-cards {
+    padding: 0 40px;
+  }
+  #home-browsing .cross-platform .cross-platform-cards .card {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #home-browsing .final-flow {
+    padding: 40px;
+    width: 100%;
+  }
+  #home-browsing .final-flow .final-flow-images .card {
+    max-width: 178px;
+  }
+  #home-browsing .final-flow .final-flow-images .card img {
+    width: 100%;
+  }
+  #home-browsing .feat-func {
+    padding: 40px 30px;
+    max-width: 100%;
+  }
+  #home-browsing .feat-func .section-title {
+    max-width: 1120px;
+    margin: 0 auto 40px;
+  }
+  #home-browsing .feat-func .catalog-types {
+    gap: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+  }
+  #home-browsing .feat-func .catalog-types .type {
+    width: 100%;
+    padding: 20px;
+  }
+  #home-browsing .feat-func .catalog-types .type img {
+    width: 100%;
+  }
+  #home-browsing .final-outcomes {
+    width: 100%;
+    padding: 40px;
+  }
+  #home-browsing .laptop {
+    padding: 50px 0;
+    width: 100%;
+  }
+  #home-browsing .laptop .laptop-wrapper {
+    width: 100%;
+  }
+  #home-browsing .user-insights .inner-title {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  #home-browsing .user-insights .user-insights-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  #home-browsing .user-insights .user-insights-cards .card {
+    max-width: 535px;
+  }
+  #home-browsing .user-insights .user-insights-cards .card:nth-child(3) {
+    display: none;
+  }
+  #home-browsing .user-insights .user-insights-cards .card img {
+    width: 100%;
+  }
+  #home-browsing .description {
+    padding: 40px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  #home-browsing .description .project-wrapper {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
