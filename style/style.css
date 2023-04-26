@@ -781,9 +781,6 @@
   #home-browsing .user-insights .user-insights-cards {
     flex-direction: column;
   }
-  #home-browsing .user-insights .user-insights-cards .card {
-    max-width: 250px;
-  }
   #home-browsing .laptop .laptop-wrapper img {
     width: 100%;
   }
