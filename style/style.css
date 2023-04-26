@@ -799,12 +799,16 @@
     width: 100%;
   }
   #home-browsing .final-flow .final-flow-images {
-    flex-wrap: wrap;
-    margin: 0;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 0;
+    gap: 20px;
   }
   #home-browsing .final-flow .final-flow-images .image {
     margin-right: 0;
+  }
+  #home-browsing .final-flow .final-flow-images .image::after {
+    right: -100px;
   }
   #home-browsing .final-flow .final-flow-images .card:nth-child(2) img {
     margin-bottom: 0;

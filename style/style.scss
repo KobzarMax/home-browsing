@@ -843,11 +843,15 @@
         }
         .final-flow {
             .final-flow-images {
-                flex-wrap: wrap;
-                margin: 0;
                 justify-content: space-between;
+                flex-wrap: wrap;
+                margin-top: 0;
+                gap: 20px;
                 .image {
                     margin-right: 0;
+                    &::after {
+                        right: -100px;
+                    }
 
                 }
                 .card {
