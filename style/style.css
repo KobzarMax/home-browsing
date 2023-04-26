@@ -5,6 +5,9 @@
   font-family: "Heebo", sans-serif;
 }
 
+#home-browsing {
+  overflow-x: hidden;
+}
 #home-browsing .header-image {
   background-image: url("../asset/header.png");
   height: 539px;
@@ -393,6 +396,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 24px;
+}
+#home-browsing .feat-func .catalog .catalog-image-wrapper .video-flex {
+  max-width: 316px;
+}
+#home-browsing .feat-func .catalog .catalog-image-wrapper img {
+  width: 387px;
 }
 #home-browsing .feat-func .catalog-types {
   margin-top: 50px;
@@ -408,6 +418,7 @@
   flex-direction: column;
   background-color: #FFFFFF;
   padding: 50px;
+  max-width: 360px;
 }
 #home-browsing .feat-func .catalog-types .type .title {
   font-size: 28px;
@@ -422,8 +433,9 @@
   color: #868686;
   margin-bottom: 50px;
 }
-#home-browsing .feat-func .catalog-types .type img {
+#home-browsing .feat-func .catalog-types .type .video-flex {
   margin: 0 auto;
+  width: 100%;
 }
 #home-browsing .final-outcomes {
   padding: 100px;
@@ -676,6 +688,7 @@
   #home-browsing .feat-func .catalog-types .type {
     width: 100%;
     padding: 20px;
+    max-width: 100%;
   }
   #home-browsing .feat-func .catalog-types .type img {
     width: 100%;
@@ -801,6 +814,9 @@
   }
   #home-browsing .stakeholder-insights .stakeholder-insights-cards .card .image-wrapper img {
     width: 100%;
+  }
+  #home-browsing .feat-func .catalog .catalog-image-wrapper {
+    flex-direction: column;
   }
 }
 @media (max-width: 572px) {
