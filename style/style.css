@@ -8,6 +8,9 @@
 #home-browsing {
   overflow-x: hidden;
 }
+#home-browsing .md {
+  display: none;
+}
 #home-browsing .header-image {
   background-image: url("../asset/header.png");
   height: 539px;
@@ -239,15 +242,6 @@
   width: 100%;
   gap: 130px;
 }
-#home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones .phone {
-  position: relative;
-}
-#home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones .phone:not(:last-child)::after {
-  position: absolute;
-  content: url("../asset/arrow.svg");
-  right: -80px;
-  top: 45%;
-}
 #home-browsing .design-exp .mobile-browsing-exp {
   margin-top: 200px;
 }
@@ -272,7 +266,6 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  flex-direction: column;
   gap: 50px;
 }
 #home-browsing .cross-platform {
@@ -394,7 +387,7 @@
 }
 #home-browsing .feat-func .catalog .catalog-image-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 24px;
 }
@@ -645,6 +638,7 @@
   }
   #home-browsing .design-exp .mobile-browsing-exp .mobile-browsing-exp-cards {
     width: 100%;
+    flex-direction: column;
   }
   #home-browsing .design-exp .mobile-browsing-exp .mobile-browsing-exp-cards .card {
     width: 100%;
@@ -664,7 +658,7 @@
     width: 100%;
   }
   #home-browsing .final-flow .final-flow-images .card {
-    max-width: 178px;
+    max-width: 100%;
   }
   #home-browsing .final-flow .final-flow-images .card img {
     width: 100%;
@@ -761,10 +755,11 @@
   #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones {
     gap: 50px;
   }
-  #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones .phone:not(:last-child)::after {
-    width: 37px;
-    display: inline-block;
-    right: -40px;
+  #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones .phone {
+    max-width: 100%;
+  }
+  #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones .phone img {
+    width: 100%;
   }
   #home-browsing .design-exp .mobile-browsing-exp {
     margin-top: 100px;
@@ -780,17 +775,11 @@
   #home-browsing .design-exp {
     max-width: 100%;
   }
-  #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones .phone {
-    max-width: 88px;
-  }
-  #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones .phone img {
-    width: 100%;
-  }
   #home-browsing .dev-direction {
     max-width: 100%;
   }
   #home-browsing .user-insights .user-insights-cards {
-    align-items: flex-start;
+    flex-direction: column;
   }
   #home-browsing .user-insights .user-insights-cards .card {
     max-width: 250px;
@@ -799,7 +788,7 @@
     width: 100%;
   }
   #home-browsing .final-flow .final-flow-images {
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 0;
     gap: 20px;
@@ -820,7 +809,20 @@
     width: 100%;
   }
   #home-browsing .feat-func .catalog .catalog-image-wrapper {
-    flex-direction: column;
+    max-width: 100%;
+  }
+  #home-browsing .feat-func .catalog .catalog-image-wrapper .video-flex {
+    max-width: 100%;
+    width: 50%;
+  }
+  #home-browsing .feat-func .catalog .catalog-image-wrapper img {
+    width: 61%;
+  }
+  #home-browsing .lx {
+    display: none;
+  }
+  #home-browsing .md {
+    display: block;
   }
 }
 @media (max-width: 572px) {
@@ -839,14 +841,5 @@
   #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones {
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones .phone:nth-child(2)::after {
-    display: none;
-  }
-  #home-browsing .design-exp .browsing-exp-wrapper .browsing-exp .browsing-exp-phones .phone.phone:not(:last-child)::after {
-    right: -80px;
-  }
-  #home-browsing .final-flow .final-flow-images .card {
-    max-width: 88px;
   }
 }/*# sourceMappingURL=style.css.map */

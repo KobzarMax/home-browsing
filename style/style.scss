@@ -6,6 +6,9 @@
 }
 #home-browsing {
     overflow-x: hidden;
+    .md {
+        display: none;
+    }
     .header-image {
         background-image: url('../asset/header.png');
         height: 539px;
@@ -233,16 +236,6 @@
                     justify-content: center;
                     width: 100%;
                     gap: 130px;
-                    .phone {
-                        position: relative;
-                        &:not(:last-child)::after {
-                            position: absolute;
-                            content: url('../asset/arrow.svg');
-                            right: -80px;
-                            top: 45%;
-                        }
-
-                    }
                 }
             }
         }
@@ -269,7 +262,6 @@
                 align-items: center;
                 justify-content: center;
                 flex-wrap: wrap;
-                flex-direction: column;
                 gap: 50px;
             }
         }
@@ -392,7 +384,7 @@
             }
             .catalog-image-wrapper {
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
                 justify-content: center;
                 gap: 24px;
                 .video-flex {
@@ -654,6 +646,7 @@
             .mobile-browsing-exp {
                 .mobile-browsing-exp-cards {
                     width: 100%;
+                    flex-direction: column;
                     .card {
                         width: 100%;
                         img {
@@ -677,7 +670,7 @@
             width: 100%;
             .final-flow-images {
                 .card {
-                    max-width: 178px;
+                    max-width: 100%;
                     img {
                         width: 100%;
                     }
@@ -785,10 +778,9 @@
                     .browsing-exp-phones {
                         gap: 50px;
                         .phone {
-                            &:not(:last-child)::after {
-                                width: 37px;
-                                display: inline-block;
-                                right: -40px;
+                            max-width: 100%;
+                            img {
+                                width: 100%;
                             }
                         }
                     }
@@ -810,25 +802,13 @@
         }
         .design-exp {
             max-width: 100%;
-            .browsing-exp-wrapper {
-                .browsing-exp {
-                    .browsing-exp-phones {
-                        .phone {
-                            max-width: 88px;
-                            img {
-                                width: 100%;
-                            }
-                        }
-                    }
-                }
-            }
         }
         .dev-direction {
             max-width: 100%;
         }
         .user-insights {
             .user-insights-cards {
-                align-items: flex-start;
+                flex-direction: column;
                 .card {
                     max-width: 250px;
                 }
@@ -843,7 +823,7 @@
         }
         .final-flow {
             .final-flow-images {
-                justify-content: space-between;
+                justify-content: center;
                 flex-wrap: wrap;
                 margin-top: 0;
                 gap: 20px;
@@ -878,9 +858,22 @@
         .feat-func {
             .catalog {
                 .catalog-image-wrapper {
-                    flex-direction: column;
+                    max-width: 100%;
+                    .video-flex {
+                        max-width: 100%;
+                        width: 50%;
+                    }
+                    img {
+                        width: 61%;
+                    }
                 }
             }
+        }
+        .lx {
+            display: none;
+        }
+        .md {
+            display: block;
         }
     }
 }
@@ -905,22 +898,7 @@
                     .browsing-exp-phones {
                         flex-wrap: wrap;
                         justify-content: space-between;
-                        .phone {
-                            &:nth-child(2)::after {
-                                display: none;
-                            }
-                            &.phone:not(:last-child)::after {
-                                right: -80px;
-                            }
-                        }
                     }
-                }
-            }
-        }
-        .final-flow {
-            .final-flow-images {
-                .card {
-                    max-width: 88px;
                 }
             }
         }
